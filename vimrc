@@ -29,17 +29,26 @@ set encoding=utf-8          " always use unicode (god damnit, windows)
 set backspace=indent,eol,start " backspace always works on insert mode
 set hidden
 
-" Colorscheme configuration.
 if &t_Co > 2
-	syntax on
-	packadd! dracula
-	silent! colorscheme dracula
-	set background=dark
-	set colorcolumn=80
 
-	highlight Folded cterm=reverse ctermbg=0 ctermfg=6
-	highlight VertSplit cterm=NONE ctermbg=NONE ctermfg=6
-	highlight Conceal cterm=NONE ctermbg=NONE ctermfg=6
+	"""" enable the theme
+  set t_Co=256
+	packadd! dracula
+	syntax enable
+	colorscheme dracula
+  set background=dark
+	highlight Normal ctermbg=532
+  let g:airline_theme='dracula'
+	let g:dracula_bold = 1
+	let g:dracula_italic = 1
+	let g:dracula_underline = 1
+	let g:dracula_undercurl = 1
+	let g:dracula_inverse = 1
+  let g:dracula_colorterm = 1
+
+	highlight Folded cterm=reverse ctermbg=0 ctermfg=8
+	highlight VertSplit cterm=NONE ctermbg=NONE ctermfg=8
+	highlight Conceal cterm=NONE ctermbg=NONE ctermfg=8
 
 	highlight DiffAdd ctermfg=green cterm=bold
 	highlight DiffDelete ctermfg=red cterm=bold
@@ -71,6 +80,10 @@ set showcmd
 set ruler
 set clipboard=unnamed
 set noshowmode
+"set fillchars+=vert:\┊
+
+"Prettier
+nmap <F8> :Prettier<CR>
 set sw=2
 set tabstop=2
 set shiftwidth=4
@@ -80,18 +93,13 @@ set nowrap              " don't wrap long lines
 set number              " show line numbers
 set showmatch           " higlight matching parentheses and brackets
 
-" Shortcuts for switching the buffers
-map <C-N> :bnext<CR>
-map <C-M> :bprev<CR>
-imap <C-N> <Esc>:bnext<CR>i
-imap <C-M> <Esc>:bprev<CR>i
-
 let mapleader=" "
 
 " Relative numbering is pretty useful for motions (3g, 5k...). However I'd
 " prefer to have a way for switching relative numbers with a single map.
 nmap <F5> :set invrelativenumber<CR>
 imap <F5> <ESC>:set invrelativenumber<CR>a
+
 
 " Save and Quit shorcuts
 nmap <Leader>w :w<CR>
@@ -109,15 +117,6 @@ noremap <leader>8 8gt
 noremap <leader>9 9gt
 noremap <leader>0 :tablast<cr>
 
-" Shortcuts for tagbar
-nmap <F8> :TagbarToggle<CR>
-
-" Buscar archivos
-nmap <Leader>F :Files
-" Copiar y pegar en el clipboard
+" Copy and paste in clipboard
 map <Leader>y "+y<CR>
 map <Leader>p "+p<CR>
-nmap <Leader><Leader> :Prettier<CR>
-
-" Double ESC the terminal to exit terminal-job mode.
-tnoremap <Esc><Esc> <C-\><C-n>
