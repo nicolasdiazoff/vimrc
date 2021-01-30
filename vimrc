@@ -61,7 +61,9 @@ let mapleader=" "
 
 " Save and Quit shorcuts
 nmap <Leader>w :w <CR>
-nmap <Leader>q :q  <bar> :NERDTreeClose<CR>
+nmap <Leader>q :q <bar> :NERDTreeClose<CR>
+nnoremap WW :w <CR>
+nnoremap qq :q <bar> :NERDTreeClose <CR>
 
 " Copy and paste in clipboard
 map <Leader>y "+y<CR>
