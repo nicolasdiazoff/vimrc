@@ -60,8 +60,8 @@ imap <F5> <ESC>:set invrelativenumber<CR>a
 let mapleader=" "
 
 " Save and Quit shorcuts
-nmap <Leader>w :w<CR>
-nmap <Leader>q :q<CR>
+nmap <Leader>w :w <CR>
+nmap <Leader>q :q  <bar> :NERDTreeClose<CR>
 
 " Copy and paste in clipboard
 map <Leader>y "+y<CR>

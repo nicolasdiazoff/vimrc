@@ -1,3 +1,4 @@
+"let NERDTreeQuitOnOpen=1
 let NERDTreeQuitOnClose=1
 let NERDTreeShowHidden=1
 let NERDTreeIgnore=['^node_modules$','\.git$', '\.idea$', '\.vscode$', '\.history$']
@@ -9,7 +10,7 @@ nnoremap <C-f> :NERDTreeFind<CR>
 autocmd VimEnter * NERDTree | wincmd p
 
 " Open the existing NERDTree on each new tab.
-"autocmd BufWinEnter * silent NERDTreeMirror
+autocmd BufWinEnter * silent NERDTreeMirror
 
 " Start NERDTree when Vim starts with a directory argument.
 autocmd StdinReadPre * let s:std_in=1
@@ -22,13 +23,10 @@ autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTr
 
 nnoremap <A-S-Left> :tabprevious<CR>
 nnoremap <A-S-Right> :tabnext<CR>
-nnoremap <A-S-N> :tabprevious<CR>
-nnoremap <A-S-H> :tabprevious<CR>
-map <A-S-H> :tabprevious<CR>
 
 " Shortcuts for switching the buffers
-" map <C-N> :bnext<CR>
-" map <C-M> :bprev<CR>
-" imap <C-N> <Esc>:bnext<CR>i
-" imap <C-M> <Esc>:bprev<CR>i
+map <C-N> :bnext<CR>
+map <C-M> :bprev<CR>
+"imap <C-N> <Esc>:bnext<CR>i
+"imap <C-M> <Esc>:bprev<CR>i
 
