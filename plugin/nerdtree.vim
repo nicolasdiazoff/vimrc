@@ -1,6 +1,6 @@
 let NERDTreeQuitOnClose=1
-let g:NERDTreeIgnore = ['^node_modules$']
-nnoremap <leader>n :NERDTreeFocus<CR>
+let NERDTreeShowHidden=1
+let NERDTreeIgnore=['^node_modules$','\.git$', '\.idea$', '\.vscode$', '\.history$']
 nnoremap <C-n> :NERDTree<CR>
 nnoremap <C-t> :NERDTreeToggle<CR>
 nnoremap <C-f> :NERDTreeFind<CR>
