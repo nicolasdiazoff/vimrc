@@ -66,6 +66,5 @@ nmap <Leader>q :q <bar> :NERDTreeClose<CR>
 nnoremap WW :w <CR>
 nnoremap qq :q <bar> :NERDTreeClose <CR>
 
-" Copy and paste in clipboard
-map <Leader>y "+y<CR>
-map <Leader>p "+p<CR>
+" Copy in clipboard
+vnoremap <C-c> "+y
