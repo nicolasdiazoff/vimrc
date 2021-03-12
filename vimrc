@@ -45,6 +45,7 @@ set sw=2
 set tabstop=2
 set shiftwidth=4
 set expandtab
+set nofoldenable
 
 set nowrap              " don't wrap long lines
 set number              " show line numbers
