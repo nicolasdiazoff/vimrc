@@ -22,8 +22,8 @@ if &t_Co > 2
 	highlight DiffChange ctermfg=yellow
 
 	" Sometimes I see the syntax be out of sync
-	noremap <F12> <Esc>:syntax sync fromstart<CR>
-	inoremap <F12> <C-o>:syntax sync fromstart<CR>
+	" noremap <F12> <Esc>:syntax sync fromstart<CR>
+	" inoremap <F12> <C-o>:syntax sync fromstart<CR>
 endif
 
 " Mark trailing spaces depending on whether we have a fancy terminal or not

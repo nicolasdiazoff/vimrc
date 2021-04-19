@@ -54,7 +54,7 @@ nmap <F8> :Prettier<CR>
 
 " Relative numbering is pretty useful for motions (3g, 5k...). However I'd
 " prefer to have a way for switching relative numbers with a single map.
-nmap <F5> :set invrelativenumber<CR>
+nmap <F5> :set nvrelativenumber<CR>
 imap <F5> <ESC>:set invrelativenumber<CR>a
 
 " Map Leader key is space
