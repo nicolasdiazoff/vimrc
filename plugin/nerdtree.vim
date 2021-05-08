@@ -1,4 +1,3 @@
-"let NERDTreeQuitOnOpen=1
 let NERDTreeQuitOnClose=1
 let NERDTreeShowHidden=1
 let NERDTreeIgnore=['^node_modules$','\.git$', '\.idea$', '\.vscode$', '\.history$']

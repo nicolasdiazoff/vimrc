@@ -1,7 +1,7 @@
 if &t_Co > 2
-  set t_Co=256
-	syntax enable
+	set t_Co=256
 	packadd! dracula
+	syntax enable
 	colorscheme dracula
 	set background=dark
 	highlight Normal ctermbg=532
