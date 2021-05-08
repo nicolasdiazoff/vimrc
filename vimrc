@@ -90,8 +90,11 @@ call plug#begin('~/.vim/plugged')
     " Plugin outside ~/.vim/plugged with post-update hook
     Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 
-    " Plugin
+    " Coc
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
+    " Control P
+    Plug 'ctrlpvim/ctrlp.vim'
 
 call plug#end()
 
