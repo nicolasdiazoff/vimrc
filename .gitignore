@@ -1,6 +1,12 @@
 .netrwhist
 
 # This is the directory where persistent undo will be stored.
+pack/
+
+# This is the directory where persistent undo will be stored.
+plugged/
+
+# This is the directory where persistent undo will be stored.
 undodir/
 
 # I initially don't want my local wiki committed.

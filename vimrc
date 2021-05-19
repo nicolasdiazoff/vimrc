@@ -67,7 +67,8 @@ call plug#begin('~/.vim/plugged')
     Plug 'Xuyuanp/nerdtree-git-plugin'
 
     "vim-coc
-    Plug 'neoclide/coc.nvim', {'branch': 'release'}
+    "Plug 'neoclide/coc.nvim', {'branch': 'release'}
+    Plug 'neoclide/coc.nvim', {'branch': 'master', 'do': 'yarn install --frozen-lockfile'}
 
     "vim-commentary
     Plug 'tpope/vim-commentary'
@@ -88,9 +89,9 @@ call plug#begin('~/.vim/plugged')
     Plug 'junegunn/vim-easy-align'
 
     " Plugin outside ~/.vim/plugged with post-update hook
-    Plug '~/.fzf/bin/fzf'
-    Plug 'junegunn/fzf', { 'dir': '~/.fzf/bin/fzf', 'do': { -> fzf#install() } }
-    Plug 'junegunn/fzf.vim'
+    " Plug '~/.fzf/bin/fzf'
+    " Plug 'junegunn/fzf', { 'dir': '~/.fzf/bin/fzf', 'do': { -> fzf#install() } }
+    " Plug 'junegunn/fzf.vim'
     "Plug '~/.vim/plugged/bin/fzf'
 
     " Coc
