@@ -18,12 +18,15 @@ call plug#begin('~/.vim/plugged')
     Plug 'alvan/vim-closetag'
     Plug 'tpope/vim-surround'
 
+    " Autocomplete
+    Plug 'sirver/ultisnips'
+    Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
     " Git
     Plug 'Xuyuanp/nerdtree-git-plugin'
     Plug 'tpope/vim-fugitive'
 
     " IDE
-    Plug 'neoclide/coc.nvim'
     Plug 'tpope/vim-commentary'
     Plug 'ryanoasis/vim-devicons'
     Plug 'junegunn/vim-easy-align'
