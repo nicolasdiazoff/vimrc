@@ -50,6 +50,19 @@ nnoremap <leader>t :Tags<CR>
 nnoremap <leader>m :Marks<CR>
 
 
+" =========================
+" Node
+" =========================
+nnoremap <Leader>x :!node %<cr>
+
+
+
+
+
+
+
+
+
 
 
 
