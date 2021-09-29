@@ -21,6 +21,10 @@ filetype indent plugin on
 set undofile
 set undodir=~/.vim/undodir
 
+" Enable folding
+set foldmethod=indent
+set foldlevel=99
+
 " Modify some other settings about files
 set encoding=utf-8          " always use unicode (god damnit, windows)
 set backspace=indent,eol,start " backspace always works on insert mode
@@ -56,67 +60,37 @@ set showmatch           " higlight matching parentheses and brackets
 " Initialize plugin system
 call plug#begin('~/.vim/plugged')
 
-    " Theme Dracula
+    " Theme
     Plug 'dracula/vim', { 'as': 'dracula' }
-
-    "vim-lightline
     Plug 'itchyny/lightline.vim'
 
-    "Nerdtree and nerdtree plugin
+    " Navigation
     Plug 'preservim/nerdtree'
-    Plug 'Xuyuanp/nerdtree-git-plugin'
-
-    "vim-coc
-    "Plug 'neoclide/coc.nvim', {'branch': 'release'}
-    Plug 'neoclide/coc.nvim', {'branch': 'master', 'do': 'yarn install --frozen-lockfile'}
-
-    "vim-commentary
-    Plug 'tpope/vim-commentary'
-
-    "vim-devicons
-    Plug 'ryanoasis/vim-devicons'
-
-    "vim-gitgutter
-    Plug 'airblade/vim-gitgutter'
-
-    "vim-polyglot
-    Plug 'sheerun/vim-polyglot'
-
-    "vim-tmux-navigator
     Plug 'christoomey/vim-tmux-navigator'
 
-    " Shorthand notation; fetches https://github.com/junegunn/vim-easy-align
+    " Git
+    Plug 'Xuyuanp/nerdtree-git-plugin'
+    Plug 'tpope/vim-fugitive'
+
+    " IDE
+    Plug 'neoclide/coc.nvim'
+    Plug 'tpope/vim-commentary'
+    Plug 'ryanoasis/vim-devicons'
+    Plug 'sheerun/vim-polyglot'
     Plug 'junegunn/vim-easy-align'
+    Plug 'terryma/vim-multiple-cursors'
+    Plug 'airblade/vim-rooter'
+    Plug 'junegunn/fzf'
+    Plug 'junegunn/fzf.vim'
+    Plug 'mhinz/vim-signify'
+    Plug 'yggdroot/indentline'
 
-    " Plugin outside ~/.vim/plugged with post-update hook
-    " Plug '~/.fzf/bin/fzf'
-    " Plug 'junegunn/fzf', { 'dir': '~/.fzf/bin/fzf', 'do': { -> fzf#install() } }
-    " Plug 'junegunn/fzf.vim'
-    "Plug '~/.vim/plugged/bin/fzf'
+    " Javascript or Typescript
 
-    " Coc
-    Plug 'neoclide/coc.nvim', {'branch': 'release'}
-
-    " Control P
-    Plug 'ctrlpvim/ctrlp.vim'
+    " Python
+    Plug 'vim-scripts/indentpython.vim'
+    Plug 'vim-syntastic/syntastic'
+    Plug 'nvie/vim-flake8'
 
 call plug#end()
 
-nmap <F8> :Prettier<CR>
-
-" Relative numbering is pretty useful for motions (3g, 5k...). However I'd
-" prefer to have a way for switching relative numbers with a single map.
-nmap <F5> :set nvrelativenumber<CR>
-imap <F5> <ESC>:set invrelativenumber<CR>a
-
-" Map Leader key is space
-let mapleader=" "
-
-" Save and Quit shorcuts
-nmap <Leader>w :w <CR>
-nmap <Leader>q :q <bar> :NERDTreeClose<CR>
-nnoremap WW :w <CR>
-nnoremap qq :q <bar> :NERDTreeClose <CR>
-
-" Copy in clipboard
-vnoremap <C-c> "+y
