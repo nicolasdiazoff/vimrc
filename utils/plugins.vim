@@ -13,6 +13,10 @@ call plug#begin('~/.vim/plugged')
     Plug 'preservim/nerdtree'
     Plug 'christoomey/vim-tmux-navigator'
 
+    " Typing
+    Plug 'jiangmiao/auto-pairs'
+    Plug 'alvan/vim-closetag'
+    Plug 'tpope/vim-surround'
 
     " Git
     Plug 'Xuyuanp/nerdtree-git-plugin'
