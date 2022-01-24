@@ -1,4 +1,4 @@
-![VIM logo](https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Vimlogo.svg/1022px-Vimlogo.svg.png)
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Vimlogo.svg/1022px-Vimlogo.svg.png" alt="VIM logo" style="height: 300px;"/>
 
 # nicolasdiazoff's VIM setup
 
