@@ -1,4 +1,4 @@
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Vimlogo.svg/1022px-Vimlogo.svg.png" alt="VIM logo" style="height: 300px;"/>
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Vimlogo.svg/1022px-Vimlogo.svg.png" alt="VIM logo" style="height: 200px;"/>
 
 # nicolasdiazoff's VIM setup
 
