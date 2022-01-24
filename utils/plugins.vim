@@ -32,10 +32,15 @@ call plug#begin('~/.vim/plugged')
     Plug 'junegunn/vim-easy-align'
     Plug 'terryma/vim-multiple-cursors'
     Plug 'airblade/vim-rooter'
-    Plug 'junegunn/fzf'
-    Plug 'junegunn/fzf.vim'
+    " Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+    " Plug 'junegunn/fzf.vim'
+    Plug 'nvim-lua/plenary.nvim'
+    Plug 'nvim-telescope/telescope.nvim'
+    Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}  " We recommend updating the parsers on update
     Plug 'mhinz/vim-signify'
     Plug 'yggdroot/indentline'
+    Plug 'godlygeek/tabular'
+    Plug 'plasticboy/vim-markdown'
 
     " Javascript or Typescript
 

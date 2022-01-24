@@ -26,6 +26,4 @@ nnoremap <A-S-Right> :tabnext<CR>
 " Shortcuts for switching the buffers
 map <C-N> :bnext<CR>
 map <C-M> :bprev<CR>
-"imap <C-N> <Esc>:bnext<CR>i
-"imap <C-M> <Esc>:bprev<CR>i
 

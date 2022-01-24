@@ -56,14 +56,6 @@ nnoremap <leader>m :Marks<CR>
 nnoremap <Leader>x :!node %<cr>
 
 
-
-
-
-
-
-
-
-
-
-
+" Source Vim configuration file and install plugins
+nnoremap <silent><leader>1 :source ~/.vimrc \| :PlugInstall<CR>
 
