@@ -14,7 +14,7 @@ imap <F5> <ESC>:set invrelativenumber<CR>a
 " =========================
 " Save and Quit shorcuts
 " =========================
-nmap <Leader>w :w <CR>
+nmap <Leader>w :w <bar> :Prettier <CR>
 nnoremap WW :w <CR>
 
 
