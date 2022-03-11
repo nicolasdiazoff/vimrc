@@ -20,7 +20,7 @@ call plug#begin('~/.vim/plugged')
 
     " Autocomplete
     Plug 'sirver/ultisnips'
-    Plug 'neoclide/coc.nvim', {'branch': 'release'}
+    Plug 'neoclide/coc.nvim', {'branch': 'master', 'do': 'yarn install --frozen-lockfile'}
 
     " Git
     Plug 'Xuyuanp/nerdtree-git-plugin'
@@ -32,15 +32,9 @@ call plug#begin('~/.vim/plugged')
     Plug 'junegunn/vim-easy-align'
     Plug 'terryma/vim-multiple-cursors'
     Plug 'airblade/vim-rooter'
-    Plug 'nvim-lua/plenary.nvim'
-    Plug 'nvim-telescope/telescope.nvim'
-    Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
     Plug 'mhinz/vim-signify'
     Plug 'yggdroot/indentline'
     Plug 'godlygeek/tabular'
-    Plug 'prettier/vim-prettier', {
-      \ 'do': 'yarn install --frozen-lockfile --production',
-      \ 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue', 'svelte', 'yaml', 'html'] }
 
     " Javascript or Typescript
 
