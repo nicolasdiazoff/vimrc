@@ -35,8 +35,15 @@ call plug#begin('~/.vim/plugged')
     Plug 'mhinz/vim-signify'
     Plug 'yggdroot/indentline'
     Plug 'godlygeek/tabular'
+    Plug 'prettier/vim-prettier', {
+      \ 'do': 'yarn install --frozen-lockfile --production',
+      \ 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue', 'svelte', 'yaml', 'html'] }
 
     " Javascript or Typescript
+    " Plug 'eslint/eslint'
+    " Plug 'pangloss/vim-javascript'
+    " Plug 'maxmellon/vim-jsx-pretty'
+    " Plug 'dense-analysis/ale'
 
     " Python
     Plug 'vim-scripts/indentpython.vim'
@@ -44,4 +51,3 @@ call plug#begin('~/.vim/plugged')
     Plug 'nvie/vim-flake8'
 
 call plug#end()
-
