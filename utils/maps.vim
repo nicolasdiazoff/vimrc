@@ -2,6 +2,7 @@
 " Map Leader key is space
 " =========================
 let mapleader=" "
+set shell=bash
 
 
 " =========================
@@ -41,16 +42,6 @@ nnoremap qq :q <bar> :NERDTreeClose <CR>
 
 
 " =========================
-" FZF
-" =========================
-map <C-p> :Files<CR>
-map <leader>b :Buffers<CR>
-nnoremap <leader>g :Rg<CR>
-nnoremap <leader>t :Tags<CR>
-nnoremap <leader>m :Marks<CR>
-
-
-" =========================
 " Node
 " =========================
 nnoremap <Leader>x :!node %<cr>
@@ -58,4 +49,3 @@ nnoremap <Leader>x :!node %<cr>
 
 " Source Vim configuration file and install plugins
 nnoremap <silent><leader>1 :source ~/.vimrc \| :PlugInstall<CR>
-

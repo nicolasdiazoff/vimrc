@@ -3,8 +3,9 @@ call plug#begin('~/.vim/plugged')
     " Syntax
     Plug 'sheerun/vim-polyglot'
 
-    " Theme
+    " Themes
     Plug 'dracula/vim', { 'as': 'dracula' }
+    Plug 'ayu-theme/ayu-vim'
 
     " Status Bar
     Plug 'itchyny/lightline.vim'
@@ -30,7 +31,6 @@ call plug#begin('~/.vim/plugged')
     Plug 'tpope/vim-commentary'
     Plug 'ryanoasis/vim-devicons'
     Plug 'junegunn/vim-easy-align'
-    Plug 'terryma/vim-multiple-cursors'
     Plug 'airblade/vim-rooter'
     Plug 'mhinz/vim-signify'
     Plug 'yggdroot/indentline'
@@ -40,10 +40,9 @@ call plug#begin('~/.vim/plugged')
       \ 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue', 'svelte', 'yaml', 'html'] }
 
     " Javascript or Typescript
-    " Plug 'eslint/eslint'
-    " Plug 'pangloss/vim-javascript'
-    " Plug 'maxmellon/vim-jsx-pretty'
-    " Plug 'dense-analysis/ale'
+    Plug 'eslint/eslint'
+    Plug 'pangloss/vim-javascript'
+    Plug 'dense-analysis/ale'
 
     " Python
     Plug 'vim-scripts/indentpython.vim'
