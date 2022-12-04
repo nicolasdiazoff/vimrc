@@ -25,13 +25,15 @@ I'm proud of it.
 
 ## Requirements
 
-* An UNIX box such as macOS, *BSD or GNU/Linux.
-* ViM 8.1. Some plugins will require +conceal.
-* Git is required to fetching the submodules.
+* Git
+* Plug
+* nodejs
+* npm
 
 ## Set up
 
 I use Plug like a plugins manager, you will need install and run the command :PlugInstall to install all plugins
+I use too Prettier and EsLint to develop on react and javascript to use that run npm install
 
 ## Disclaimer
 
@@ -46,5 +48,3 @@ if your Vim install breaks, if something explodes. My vimrc comes with
 no warranties. Again; you shouldn't play with my toys if you don't want
 to get hurt.** (This doesn't mean my vimrc will hurt you, you know, but
 this is legal boilerplate to cover my ass _in case_ something happens).
-
-
