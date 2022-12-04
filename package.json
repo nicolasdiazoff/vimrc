@@ -1,0 +1,26 @@
+{
+  "name": "nicolasdiazoff-vim",
+  "version": "1.0.0",
+  "description": "<img src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Vimlogo.svg/1022px-Vimlogo.svg.png\" alt=\"VIM logo\" style=\"height: 200px;\"/>",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nicolasdiazoff/vimrc.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nicolasdiazoff/vimrc/issues"
+  },
+  "homepage": "https://github.com/nicolasdiazoff/vimrc#readme",
+  "dependencies": {
+    "eslint": "^8.17.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.30.0"
+  }
+}

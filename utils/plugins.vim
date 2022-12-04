@@ -3,8 +3,9 @@ call plug#begin('~/.vim/plugged')
     " Syntax
     Plug 'sheerun/vim-polyglot'
 
-    " Theme
+    " Themes
     Plug 'dracula/vim', { 'as': 'dracula' }
+    Plug 'ayu-theme/ayu-vim'
 
     " Status Bar
     Plug 'itchyny/lightline.vim'
@@ -20,7 +21,7 @@ call plug#begin('~/.vim/plugged')
 
     " Autocomplete
     Plug 'sirver/ultisnips'
-    Plug 'neoclide/coc.nvim', {'branch': 'release'}
+    Plug 'neoclide/coc.nvim', {'branch': 'master', 'do': 'yarn install --frozen-lockfile'}
 
     " Git
     Plug 'Xuyuanp/nerdtree-git-plugin'
@@ -30,11 +31,7 @@ call plug#begin('~/.vim/plugged')
     Plug 'tpope/vim-commentary'
     Plug 'ryanoasis/vim-devicons'
     Plug 'junegunn/vim-easy-align'
-    Plug 'terryma/vim-multiple-cursors'
     Plug 'airblade/vim-rooter'
-    Plug 'nvim-lua/plenary.nvim'
-    Plug 'nvim-telescope/telescope.nvim'
-    Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
     Plug 'mhinz/vim-signify'
     Plug 'yggdroot/indentline'
     Plug 'godlygeek/tabular'
@@ -43,6 +40,9 @@ call plug#begin('~/.vim/plugged')
       \ 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue', 'svelte', 'yaml', 'html'] }
 
     " Javascript or Typescript
+    Plug 'eslint/eslint'
+    Plug 'pangloss/vim-javascript'
+    Plug 'dense-analysis/ale'
 
     " Python
     Plug 'vim-scripts/indentpython.vim'
@@ -50,4 +50,3 @@ call plug#begin('~/.vim/plugged')
     Plug 'nvie/vim-flake8'
 
 call plug#end()
-
