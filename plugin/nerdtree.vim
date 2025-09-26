@@ -1,10 +1,12 @@
-let NERDTreeQuitOnClose=1
-let NERDTreeShowHidden=1
-let NERDTreeIgnore=['^node_modules$','\.git$', '\.idea$', '\.vscode$', '\.history$']
-nnoremap <C-n> :NERDTree<CR>
-nnoremap <C-t> :NERDTreeToggle<CR>
-nnoremap <C-f> :NERDTreeFind<CR>
+" =========================
+" NERDTree settings
+" =========================
 
+let NERDTreeQuitOnClose=1          " Quit when closing last file
+let NERDTreeShowHidden=1           " Show hidden files
+let NERDTreeIgnore=['^node_modules$', '\.git$', '\.idea$', '\.vscode$', '\.history$']
+
+" Auto commands
 " Start NERDTree and put the cursor back in the other window.
 autocmd VimEnter * NERDTree | wincmd p
 
@@ -19,11 +21,3 @@ autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists('s:std_in
 " Exit Vim if NERDTree is the only window left.
 autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() |
     \ quit | endif
-
-nnoremap <A-S-Left> :tabprevious<CR>
-nnoremap <A-S-Right> :tabnext<CR>
-
-" Shortcuts for switching the buffers
-map <C-N> :bnext<CR>
-map <C-M> :bprev<CR>
-

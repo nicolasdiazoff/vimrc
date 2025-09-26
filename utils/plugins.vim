@@ -49,4 +49,10 @@ call plug#begin('~/.vim/plugged')
     Plug 'vim-syntastic/syntastic'
     Plug 'nvie/vim-flake8'
 
+    " Dependencia
+    Plug 'nvim-lua/plenary.nvim'
+
+    " Telescope
+    Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.5' }
+
 call plug#end()

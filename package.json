@@ -1,26 +1,40 @@
 {
   "name": "nicolasdiazoff-vim",
   "version": "1.0.0",
-  "description": "<img src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Vimlogo.svg/1022px-Vimlogo.svg.png\" alt=\"VIM logo\" style=\"height: 200px;\"/>",
+  "description": "Custom Vim/Neovim configuration by nicolascodes.com, including plugins, keymaps, and tooling (ESLint/Prettier).",
   "main": "index.js",
-  "devDependencies": {},
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "author": "Nicolás Díaz <nicolasdiazoff@gmail.com>",
+  "license": "MIT",
+  "keywords": [
+    "vim",
+    "neovim",
+    "vimrc",
+    "dotfiles",
+    "config",
+    "eslint",
+    "prettier"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/nicolasdiazoff/vimrc.git"
   },
-  "author": "",
-  "license": "ISC",
   "bugs": {
     "url": "https://github.com/nicolasdiazoff/vimrc/issues"
   },
   "homepage": "https://github.com/nicolasdiazoff/vimrc#readme",
-  "dependencies": {
+  "scripts": {
+    "test": "echo \"No tests configured yet\" && exit 0",
+    "lint": "eslint .",
+    "format": "prettier --write ."
+  },
+  "devDependencies": {
     "eslint": "^8.17.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.0.0",
-    "eslint-plugin-react": "^7.30.0"
+    "eslint-plugin-react": "^7.30.0",
+    "prettier": "^2.7.0"
+  },
+  "engines": {
+    "node": ">=16.0.0"
   }
 }
