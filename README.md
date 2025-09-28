@@ -1,50 +1,92 @@
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Vimlogo.svg/1022px-Vimlogo.svg.png" alt="VIM logo" style="height: 200px;"/>
 
-# nicolasdiazoff's VIM setup
+# nicolasdiazoff's Neovim Setup
 
-I want to share my vim configuration because I think it can be useful to you. The truth is that I do not add many complicated configurations, I try to keep my configuration minimalist to be able to run vim on any computer that I need, especially on servers. Although I use vim in my day to day programming, I also like other editors like vscode. If you have any recommendation do not hesitate to make your contribution.
+Minimalist, portable, and modern Neovim configuration for developers who want a fast and productive workflow.
 
 ---
 
 ## About
 
-This my vimrc setup. Keeping your vim setup in a Git repository
-is cool because you can track the changes you do to your set up,
-you can rollback if something goes wrong, you can branch and
-test new settings while keeping your base setup stable...
+This repository contains my personal Neovim configuration, designed to be simple, easy to maintain, and portable across different systems (including servers). I use Neovim daily for programming, especially in JavaScript/TypeScript and web development, but the setup is flexible for other languages as well.
 
-Also, pushing my vimrc to GitHub is nice because I have an
-online backup. In case I format my PC or want to install vim into
-a new computer, I just have to clone my repository and it's done.
+Keeping your Neovim setup in a Git repository allows you to:
 
-There's another reason for pushing my vimrc setup online. You can
-share your setup with everybody, let people learn from what you're
-done. I like to browse other vimrc repos here at GitHub and learn
-from their experience. I know my vimrc setup is tiny and modest but
-I'm proud of it.
+- Track and roll back changes
+- Experiment with new settings safely
+- Quickly set up your environment on any machine
+- Share your workflow with others
 
 ## Requirements
 
-* Git
-* Plug
-* nodejs
-* npm
+- **Neovim** (recommended: v0.5+)
+- **Git**
+- **Node.js** (for plugins like coc.nvim and vim-prettier)
+- **npm** or **yarn**
+- **vim-plug** (plugin manager)
 
-## Set up
+## Installation
 
-I use Plug like a plugins manager, you will need install and run the command :PlugInstall to install all plugins
-I use too Prettier and EsLint to develop on react and javascript to use that run npm install
+1. **Clone this repository:**
+
+   ```sh
+   git clone https://github.com/nicolasdiazoff/vimrc.git ~/.config/nvim
+   ```
+
+2. **Install vim-plug (if not already installed):**
+
+   ```sh
+   curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
+     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+   ```
+
+3. **Open Neovim and install plugins:**
+
+   ```vim
+   :PlugInstall
+   ```
+
+4. **Install Node.js dependencies for plugins:**
+
+   ```sh
+   cd ~/.config/nvim
+   npm install
+   # or
+   yarn install
+   ```
+
+5. **(Optional) Install Prettier and ESLint globally:**
+
+   ```sh
+   npm install -g prettier eslint
+   ```
+
+## Features
+
+- Minimalist and fast startup
+- Modern completion with [coc.nvim](https://github.com/neoclide/coc.nvim)
+- Prettier integration for auto-formatting
+- ESLint integration for linting
+- Telescope for fuzzy finding
+- NERDTree for file navigation
+- Lightline status bar
+- Useful mappings for productivity
+
+## Prettier
+
+Prettier is integrated via [vim-prettier](https://github.com/prettier/vim-prettier). To format your code:
+
+- **Manual:** Run `:Prettier` or `:PrettierAsync` in Neovim.
+- **Auto-format on save:** Add this to your `init.vim` or `utils/maps.vim`:
+
+  ```vim
+  autocmd BufWritePre *.js,*.ts,*.jsx,*.tsx,*.json,*.css,*.md,*.html PrettierAsync
+  ```
 
 ## Disclaimer
 
-This is MY vimrc setup and it is opinionated and made to work how I
-want.  Anyone can download and use my vimrc, but unless you and me are
-the same person, you'll probably find things that you don't want. It is
-OK. Use this vimrc as a starting point for making your own.
+This is my personal Neovim setup and is opinionated. Feel free to use it as a starting point for your own configuration. I am not responsible for any issues or data loss caused by using this setup.
 
-**Under no circumstances I am responsible for any kind of damage
-derived from the use of this vimrc on your machine. If you lose files,
-if your Vim install breaks, if something explodes. My vimrc comes with
-no warranties. Again; you shouldn't play with my toys if you don't want
-to get hurt.** (This doesn't mean my vimrc will hurt you, you know, but
-this is legal boilerplate to cover my ass _in case_ something happens).
+---
+
+If you have suggestions or improvements, feel free to open an issue or pull request!
