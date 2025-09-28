@@ -20,7 +20,7 @@ call plug#begin('~/.vim/plugged')
     Plug 'tpope/vim-surround'
 
     " Autocomplete
-    Plug 'sirver/ultisnips'
+    " Plug 'sirver/ultisnips'
     Plug 'neoclide/coc.nvim', {'branch': 'master', 'do': 'yarn install --frozen-lockfile'}
 
     " Git
