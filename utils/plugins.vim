@@ -1,4 +1,4 @@
-call plug#begin('~/.vim/plugged')
+call plug#begin('~/.local/share/nvim/plugged')
 
     " Syntax
     Plug 'sheerun/vim-polyglot'
@@ -49,10 +49,8 @@ call plug#begin('~/.vim/plugged')
     Plug 'vim-syntastic/syntastic'
     Plug 'nvie/vim-flake8'
 
-    " Dependencia
-    Plug 'nvim-lua/plenary.nvim'
-
     " Telescope
+    Plug 'nvim-lua/plenary.nvim'
     Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.5' }
 
 call plug#end()

@@ -62,7 +62,7 @@ nnoremap <leader>fh <cmd>Telescope help_tags<cr>
 inoremap <silent><expr> <CR> coc#pum#visible() ? coc#pum#confirm() : "\<CR>"
 inoremap <silent><expr> <C-Space> coc#refresh()
 
-" Tab y Shift-Tab 
+" Tab y Shift-Tab
 function! s:check_back_space() abort
 	let col = col('.') - 1
 	return !col || getline('.')[col - 1]  =~# '\s'
